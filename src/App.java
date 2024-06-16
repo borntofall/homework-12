@@ -13,10 +13,19 @@ public class App {
         bookTwo.setYear(2013);
         System.out.println("Книга после изменения года:");
         printBook(bookTwo);
+
+        System.out.println(bookOne);
+        System.out.println(authorOne);
+        System.out.println(bookTwo);
+        System.out.println(authorTwo);
+
+        System.out.println(bookOne.equals(bookOne));
+
     }
 
     private static void printBook(Book book) {
         System.out.printf("Название книги: %s%nАвтор книги: %s%nГод книги: %s%n----%n",
                 book.getName(),book.getAuthor().getFullName(), book.getYear());
     }
+
 }
